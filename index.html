@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<meta charset="UTF-8">
+	<title>TO-DO's list</title>
+	<meta content="width=device-width, initial-scale=1" name="viewport" />
+	<script src="js/Tarea.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+	<header>
+		<nav id="nav">
+			<a href="#">Home</a>
+			<a href="#">Calendario</a>
+			<a href="#">Perfil</a>
+			<a href="#">Salir</a>
+		</nav>
+	</header>
+	<main class="row">
+		
+			<aside>
+					<section id="contacto">
+						<img id="imgUsuario" src="imagen/219970.svg">
+						<h2>Luis</h2>
+					</section>
+
+					<section id="infocontacto">
+						<hr>
+						<h3><strong>OTRAS LISTRAS</strong></h3>
+						<ul id="listados">
+							<li>Reparaciones casa</li>
+							<li>Libros pendientes</li>
+							<li>Compra</li>
+							<li>Receta pan</li>
+						</ul>
+					</section>
+			</aside>
+
+			<div class="contenido">
+				<div id="contenedortareas">
+					<div class="insert">
+						<h2>To Do!</h2>
+						<form action="#" method="get">
+							<input type="text" id="tituloTarea" placeholder="Introduce la tarea">
+
+							<select id="prioridad" required>
+								<option value="">Selecciona una prioridad</option>
+								<option value="urgente">Urgente</option>
+								<option value="diaria">Diaria</option>
+								<option value="mensual">Mensual</option>
+							</select>
+
+							<input type="submit" value="Guardar" id="guardar">
+						</form>
+						<p id="mensaje"></p>
+					</div>
+					<hr>
+					<div class="filter">
+						<select id="prioridadSelect">
+							<option value="todas">Todas las tareas</option>
+							<option value="urgente">Urgente</option>
+							<option value="diaria">Diaria</option>
+							<option value="mensual">Mensual</option>
+						</select>
+
+						<input type="text" id="search" placerholder="Tarea a buscar">
+					</div>
+					<section class="notareas" id="notareas">
+
+					</section>
+					<section class="tareas" id="tareas">
+					</section>
+				</div>
+			</div>
+		
+
+
+	</main>
+
+	<footer>
+		<p>APP TO-DO's Virginia González B.</p>
+	</footer>
+
+	<script src="js/eventos.js"></script>
+	<script src="js/funciones.js"></script>
+	<script src="js/cookies.js"></script>
+
+</body>
+
+</html>

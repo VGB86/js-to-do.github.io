@@ -1,0 +1,182 @@
+@import url(reset.css);
+*{
+	box-sizing: border-box;
+}
+body{
+	font-family: 'Montserrat', sans-serif;
+}
+/* MENU */
+#nav{
+	background-color: #E37B58;
+	overflow: hidden;
+}
+
+#nav a{
+	color:#FDF7EB;
+	float: left;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+
+/* BARRA LATERAL */
+
+aside {
+	float: left;
+  	width: 15%;
+	height: 100%;
+	background-color: #f1f1f1;
+	padding: 20px;
+}
+.contenido{
+	float: left;
+  	width: 85%;
+	background-color: white;
+}
+aside img{
+	justify-items: center;
+	max-width: 120px;
+}
+
+aside  h2{
+	margin-top: 1em;
+	text-align: center;
+	justify-items: center;
+	color:#E37B58 ;
+} 
+
+aside #infocontacto{
+	margin-top: 120px;
+	cursor: pointer;
+}
+h3{
+	font-weight: 800;
+}
+#listados li{
+	margin-top: 1em;
+}
+
+/* CUERPO */
+/* Rectangulo Azul */
+ #contenedortareas{
+	width: 90%;
+	margin-top: 10px;
+	margin-right: 30px;
+	margin-left: 10px;
+	border-radius: 15px 15px 15px 15px;
+	box-shadow: 0px 0px 5px black;
+	padding: 20px;
+	background-color: #D3E7E6;
+}
+
+
+select,  input, button{
+    border-color:transparent;
+    width: 24%; 
+    padding: 10px; 
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+    box-sizing: border-box; 
+    margin-top: 6px; 
+    margin-bottom: 16px; 
+    resize: vertical 
+}
+ #guardar{
+	color: #ffff;
+	background-color:#E37B58;
+	border-radius: 15px 15px 15px 15px;
+	box-shadow: 0px 0px 5px #cccccc;
+}
+
+/* Boton Eliminar tarea */
+.tareas article{
+	width: 90%;
+	height: 60px;
+	position: relative;
+	padding: 20px 0px 20px 20px;
+	border-radius: 15px 15px 15px 15px;
+	border: 1px solid #B6A7AA;
+	margin-top: 0.5em;
+
+}
+ .tareas .urgente{
+	background-color: #E37B58;
+}
+
+ .tareas .diaria{
+	background-color: #FDF7EB;
+}
+
+ .tareas .mensual{
+	background-color: #F7BC48;
+}
+
+/* Boton eliminar sobre listado tareas */
+ .tareas article>a{
+	background-color: #CE4928;
+	display: inline-block;
+	padding: 15px;
+	color: white;
+	text-decoration: none;
+	width:15%;
+	height: 100%;
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	border-radius: 15px 15px 15px 15px;
+	transition: 1s;
+} 
+
+ .tareas article>a:hover{
+	width: 125px;
+}
+
+/* FOOTER */
+footer{
+	padding: 10px;
+	margin-left: 10em;
+	color:#B6A7AA
+}
+
+
+#notareas article{
+	padding: 20px;
+}
+
+
+
+@media (max-width: 700px) {
+	
+	aside, .contenido{
+		width: 100%;
+		background-color: #ffff;
+		padding: 0%;
+	}
+	.tareas article>a {
+		width:25%;
+		font-size: 14px;
+	}
+	aside {
+		visibility: hidden;
+		position: absolute;
+	}
+	
+}
+
+
+@media (max-width: 700px) {
+	
+	select, input{
+		width: 80%;
+	}
+	
+	
+}
+
+
+
+
+
+
+
+
