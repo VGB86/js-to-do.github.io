@@ -1,2 +1,4 @@
-# js-to-do.github.io
-To do en JavaScript
+# Welcome js-to-do.github.io
+
+GitHub para mostar código js y publicarlo. 
+
